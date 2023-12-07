@@ -18,7 +18,7 @@ Le projet est organisé de la manière suivante :
 
 - **`MovieSearch.php`**: Classe pour interagir avec l'API OMDB et effectuer des recherches de films.
 - **`index.php`**: Fichier principal de l'application, affiche le formulaire de recherche et les résultats de la recherche.
-- **`Movie.php`**: Fichier qui composant qui affiche les films
+- **`Movies.php`**: Fichier qui composant qui affiche les films
 - **`README.md`**: Ce fichier, contenant des informations sur le projet.
 
 ## Installation
