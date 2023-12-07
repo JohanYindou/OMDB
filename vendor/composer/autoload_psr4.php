@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Vendor\\Omdb\\' => array($baseDir . '/src'),
+    'C:\\wamp64\\www\\omdb' => array($baseDir . '/src'),
 );
