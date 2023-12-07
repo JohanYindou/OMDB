@@ -1,10 +1,8 @@
 <?php
 
 $imdb = 'https://imdb.com/title/';
-
 if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET['q'])) {
     require_once './classes/MovieSearch.php';
-
     $search = new MovieSearch();
     $moviesList = $search->searchMovies($_GET['q']);
 }
