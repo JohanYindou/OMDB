@@ -9,6 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET['q'])) {
 }
 ?>
 
+<head>
+    <meta charset="UTF-8">
+    <title>
+        TP OMDB
+    </title>
+</head>
+
+<body>
 <div>
     <h1>OMDB API</h1>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="GET">
@@ -35,6 +43,7 @@ if (isset($moviesList) && !empty($moviesList)) {
             </div>
         <?php endforeach; ?>
     </div>
+</body>
     <?php
 } else if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET['q'])) {
     echo 'Aucun film trouvé pour la recherche : ' . $_GET['q'];
