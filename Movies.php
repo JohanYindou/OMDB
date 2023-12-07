@@ -1,4 +1,5 @@
 <?php
+
 $imdb = 'https://imdb.com/title/';
 
 if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET['q'])) {
@@ -7,26 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET['q'])) {
     $search = new MovieSearch();
     $moviesList = $search->searchMovies($_GET['q']);
 }
-?>
-
-<head>
-    <meta charset="UTF-8">
-    <title>
-        TP OMDB
-    </title>
-</head>
-
-<body>
-<div>
-    <h1>OMDB API</h1>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="GET">
-        <label for="searchTerm">Effectuer une recherche :</label>
-        <input type="text" id="searchTerm" name="q" required>
-        <button type="submit">Rechercher</button>
-    </form>
-</div>
-
-<?php
 if (isset($moviesList) && !empty($moviesList)) {
     ?>
     <div class="movies">
@@ -38,12 +19,12 @@ if (isset($moviesList) && !empty($moviesList)) {
                     <h3>
                         <?= $movie['Title'] ?>
                     </h3>
-                    <p>Voir les détails <a href="<?= $imdb . $movie['imdbID'] ?>" target="_blank">IMDB</a></p>
+                    <p><a href="<?= $imdb . $movie['imdbID'] ?>" target="_blank">Voir sur IMDB</a></p>
                 </div>
             </div>
         <?php endforeach; ?>
     </div>
-</body>
+    </body>
     <?php
 } else if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET['q'])) {
     echo 'Aucun film trouvé pour la recherche : ' . $_GET['q'];
