@@ -54,7 +54,9 @@ button {
     padding: 0.5rem;
 }
 
-
+button{
+    background-color: #d1d1d1;
+}
 
 /*Règles pour les tailles d'écran plus petites */
 @media screen and (max-width: 768px) {
