@@ -1,4 +1,4 @@
-# Projet TP OMDB
+# TP OMDB
 
 Ce projet utilise l'API OMDB (Open Movie Database) pour effectuer des recherches de films et afficher les détails des films trouvés.
 
@@ -18,11 +18,12 @@ Le projet est organisé de la manière suivante :
 
 - **`MovieSearch.php`**: Classe pour interagir avec l'API OMDB et effectuer des recherches de films.
 - **`index.php`**: Fichier principal de l'application, affiche le formulaire de recherche et les résultats de la recherche.
+- **`MovieSearch.php`**: Classe qui stock les données obtenues de l'API OMDB.
 - **`README.md`**: Ce fichier, contenant des informations sur le projet.
 
 ## Installation
 
-1. Cloner le dépôt : `git clone https://github.com/votre-utilisateur/TP-OMDB.git`
+1. Cloner le dépôt : `git clone https://github.com/JohanYindou/OMDB`
 2. Placer les fichiers sur un serveur web ou local (WAMP, XAMPP, etc.).
 3. Assurez-vous d'avoir une connexion Internet active pour effectuer les requêtes à l'API OMDB.
 
