@@ -1,0 +1,17 @@
+{
+    "name": "vendor/omdb",
+    "description": "Une page de recherche de film réalisé avec l'api de OMDB",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Omdb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Johan Yindou",
+            "email": "jyindou@gmail.com"
+        }
+    ],
+    "require": {}
+}
