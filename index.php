@@ -3,6 +3,7 @@ require __DIR__ . "/classes/MovieSearch.php";
 $search = new MovieSearch();
 // Utilisation de la fonction searchMovies() pour récupérer les films
 ?>
+
 <head>
     <meta charset="UTF-8">
     <title>
@@ -12,6 +13,7 @@ $search = new MovieSearch();
         <?php include './styles/style.css'; ?>
     </style>
 </head>
+
 <body>
     <div>
         <h1>OMDB API</h1>
